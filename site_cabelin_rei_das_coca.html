@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabelin Rei das Coca | Retornáveis R$ 7,99</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Cabelin Rei das Coca – Coca-Cola, Fanta Laranja e Fanta Uva retornáveis por R$ 7,99. Pedido fácil pelo WhatsApp." />
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-red-50 to-white text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-red-600 text-white sticky top-0 z-50 shadow-xl">
+  <div class="max-w-7xl mx-auto px-4 py-3 text-center text-sm font-medium">
+    📍 Av. Dr. Roberto Silveira, 623 – Agostinho Porto – São João de Meriti – RJ
+  </div>
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-2xl md:text-3xl font-extrabold">🥤 Cabelin Rei das Coca</h1>
+    <a href="#pedido" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-xl font-bold transition">Comprar</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-14 items-center">
+  <div>
+    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+      Refrigerante <span class="text-red-600">Retornável</span><br>por apenas <span class="text-green-600">R$ 7,99</span>
+    </h2>
+    <p class="text-lg mb-8">Venda local em São João de Meriti. Bebidas geladas, originais e com pedido rápido pelo WhatsApp.</p>
+    <div class="flex gap-4 flex-wrap">
+      <a href="#pedido" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold shadow-lg transition">📲 Fazer pedido</a>
+      <a href="#bebidas" class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-4 rounded-2xl font-bold transition">🥤 Ver bebidas</a>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <img src="https://i.ibb.co/HfwV2Jx2/refrigerantes-retornaveis-jpg.png" class="h-96 drop-shadow-2xl" alt="Refrigerantes Retornáveis" />
+  </div>
+</section>
+
+<!-- BEBIDAS -->
+<section id="bebidas" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-4xl font-extrabold text-center mb-14">🥤 Bebidas disponíveis</h3>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <!-- Card -->
+      <div class="bg-red-50 rounded-3xl p-6 text-center shadow-lg hover:scale-105 transition">
+        <img src="https://i.ibb.co/N6B0kQqn/Coca-Cola-Retorn-vel-jpg.png" class="h-40 mx-auto mb-4" />
+        <h4 class="font-bold text-xl">Coca-Cola</h4>
+        <p class="text-sm">Retornável</p>
+      </div>
+      <div class="bg-gray-50 rounded-3xl p-6 text-center shadow-lg hover:scale-105 transition">
+        <img src="https://i.ibb.co/Xx2tLXHQ/Coca-Cola-Zero-Retorn-vel-jpg.png" class="h-40 mx-auto mb-4" />
+        <h4 class="font-bold text-xl">Coca-Cola Zero</h4>
+        <p class="text-sm">Retornável</p>
+      </div>
+      <div class="bg-orange-50 rounded-3xl p-6 text-center shadow-lg hover:scale-105 transition">
+        <img src="https://i.ibb.co/jPYS2zmx/Fanta-Laranja-Retorn-vel-jpg.png" class="h-40 mx-auto mb-4" />
+        <h4 class="font-bold text-xl">Fanta Laranja</h4>
+        <p class="text-sm">Retornável</p>
+      </div>
+      <div class="bg-purple-50 rounded-3xl p-6 text-center shadow-lg hover:scale-105 transition">
+        <img src="https://i.ibb.co/LhDNmdyv/Fanta-Uva-Retorn-vel-jpg.png" class="h-40 mx-auto mb-4" />
+        <h4 class="font-bold text-xl">Fanta Uva</h4>
+        <p class="text-sm">Retornável</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PEDIDO -->
+<section id="pedido" class="py-24 bg-gradient-to-r from-red-600 to-red-500 text-white">
+  <div class="max-w-xl mx-auto px-4">
+    <h3 class="text-4xl font-extrabold text-center mb-10">🛒 Faça seu pedido</h3>
+
+    <div class="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 space-y-6">
+      <p class="font-semibold text-center">Escolha os produtos e quantidades</p>
+
+      <div class="space-y-4">
+        <div class="flex items-center justify-between gap-4">
+          <span>Coca-Cola</span>
+          <input type="number" id="qtd-coca" min="0" value="0" class="w-20 border rounded-lg px-3 py-2" />
+        </div>
+        <div class="flex items-center justify-between gap-4">
+          <span>Coca-Cola Zero</span>
+          <input type="number" id="qtd-zero" min="0" value="0" class="w-20 border rounded-lg px-3 py-2" />
+        </div>
+        <div class="flex items-center justify-between gap-4">
+          <span>Fanta Laranja</span>
+          <input type="number" id="qtd-laranja" min="0" value="0" class="w-20 border rounded-lg px-3 py-2" />
+        </div>
+        <div class="flex items-center justify-between gap-4">
+          <span>Fanta Uva</span>
+          <input type="number" id="qtd-uva" min="0" value="0" class="w-20 border rounded-lg px-3 py-2" />
+        </div>
+      </div>
+
+      <div>
+        <label class="font-semibold">Forma de pagamento</label>
+        <select id="pagamento" class="w-full mt-2 border rounded-xl px-4 py-3">
+          <option value="Pix">Pix</option>
+          <option value="Dinheiro">Dinheiro na mão</option>
+        </select>
+        <p class="text-sm mt-2 text-green-700 font-semibold">📌 Pix (celular): 21980366183</p>
+      </div>
+
+      <p class="text-center font-semibold">💰 R$ 7,99 cada (retornável)</p>
+
+      <div class="flex justify-center gap-4 mt-2">
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-xl font-bold">PIX</span>
+        <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-xl font-bold">DINHEIRO</span>
+      </div>
+
+      <button onclick="enviarWhatsApp()" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-2xl font-bold text-lg transition">
+        📲 Enviar pedido no WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-extrabold mb-6">📍 Onde estamos</h3>
+    <p class="mb-8">Av. Dr. Roberto Silveira, 623 – Agostinho Porto<br>São João de Meriti – RJ</p>
+    <iframe class="w-full max-w-4xl h-80 mx-auto rounded-3xl shadow-xl" loading="lazy" allowfullscreen
+      src="https://www.google.com/maps?q=Av.%20Dr.%20Roberto%20Silveira,%20623%20-%20Agostinho%20Porto,%20São%20João%20de%20Meriti%20-%20RJ&output=embed"></iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-10 text-center">
+  <p class="font-bold">Cabelin Rei das Coca</p>
+  <p class="text-sm">📍 Av. Dr. Roberto Silveira, 623 – Agostinho Porto – São João de Meriti – RJ</p>
+  <p class="text-sm">Venda local – Revenda independente</p>
+  <p class="text-xs mt-4">This website is not an official website of The Coca-Cola Company.</p>
+</footer>
+
+<script>
+  function enviarWhatsApp() {
+    const preco = 7.99;
+    const itens = [];
+
+    const coca = parseInt(document.getElementById('qtd-coca').value);
+    const zero = parseInt(document.getElementById('qtd-zero').value);
+    const laranja = parseInt(document.getElementById('qtd-laranja').value);
+    const uva = parseInt(document.getElementById('qtd-uva').value);
+
+    if (coca > 0) itens.push(`Coca-Cola: ${coca}`);
+    if (zero > 0) itens.push(`Coca-Cola Zero: ${zero}`);
+    if (laranja > 0) itens.push(`Fanta Laranja: ${laranja}`);
+    if (uva > 0) itens.push(`Fanta Uva: ${uva}`);
+
+    if (itens.length === 0) {
+      alert('Selecione pelo menos um produto');
+      return;
+    }
+
+    const totalQtd = coca + zero + laranja + uva;
+    const total = (totalQtd * preco).toFixed(2);
+    const pagamento = document.getElementById('pagamento').value;
+
+    const mensagem = `Olá! Quero fazer um pedido:%0A${itens.join('%0A')}%0A%0ATotal de itens: ${totalQtd}%0AValor total: R$ ${total}%0AForma de pagamento: ${pagamento}`;
+
+    window.open(`https://wa.me/5521980366183?text=${mensagem}`, '_blank');
+  }
+</script>
+
+<!-- BOTÃO WHATSAPP SUPORTE -->
+<a href="https://wa.me/5521980366183?text=Olá!%20Preciso%20de%20ajuda%20com%20um%20pedido." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full shadow-2xl font-bold z-50">💬 Suporte WhatsApp</a>
+
+<!-- Aviso Profissional -->
+<section class="fixed bottom-4 right-4 z-50 max-w-sm bg-white/95 backdrop-blur shadow-2xl rounded-2xl p-4 border border-red-200 flex items-center gap-3">
+  <img src="https://i.ibb.co/FbPVdBtk/Captura-de-tela-2026-01-05-105124.png" alt="Aviso Não Vendo Fiado" class="w-20 h-auto rounded-xl shadow">
+  <div class="text-sm text-gray-800">
+    <p class="font-bold text-red-600">Aviso Importante</p>
+    <p class="leading-tight mb-2">Não trabalho com vendas fiadas. Pagamento apenas em <strong>Pix</strong> ou <strong>dinheiro</strong>.</p>
+    <a href="https://wa.me/5521980366183?text=Olá!%20Preciso%20de%20suporte." target="_blank" class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl font-bold text-sm transition">💬 Suporte WhatsApp</a>
+  </div>
+</section>
+
+</body>
+</html>
